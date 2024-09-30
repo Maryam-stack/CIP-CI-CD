@@ -1,0 +1,78 @@
+.heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+
+  .heroes li {
+    display: flex;
+  }
+
+  .heroes button {
+    flex: 1;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: stretch;
+    height: 1.8em;
+  }
+
+  .heroes button:hover {
+    color: #adc2cd;
+    background-color: #534646;
+    left: .1em;
+  }
+
+  .heroes button:active {
+    background-color: #525252;
+    color: #fafafa;
+  }
+
+  .heroes button.selected {
+    background-color: rgb(23, 18, 146);
+    color: white;
+  }
+
+  .heroes button.selected:hover {
+    background-color: #1b4922;
+    color: white;
+  }
+
+  .heroes button.selected:active {
+    background-color: rgb(70, 173, 64);
+    color: white;
+  }
+
+  .heroes .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.9em 0.9em 0.9em;
+    background-color: #405061;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .heroes .name {
+    align-self: center;
+  }
+
+.list {
+  background-color:#c0d1db;
+  width: 500px;
+  height: 40px;
+}
+
+.card {
+  max-width: 500px;
+  height: 800px;
+  position: absolute;
+  padding-left: 400px;
+  display: block;
+}

@@ -1,0 +1,17 @@
+.card {
+  max-width: 850px;
+  height: 700px;
+  position: absolute;
+  text-align: center;
+  padding-left: 400px;
+  display:block;
+}
+
+.card-content {
+  padding-top: 10px;
+}
+
+.card-subtitle {
+  text-align: left;
+}
+

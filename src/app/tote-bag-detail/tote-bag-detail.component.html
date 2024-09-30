@@ -1,0 +1,14 @@
+
+<div *ngIf="toteBag">
+  <mat-card class="card">
+    <mat-card-title>
+      <h2>{{toteBag.name}} Details <span style="cursor: pointer;" class="material-icons" (click)="onEdit()">edit</span></h2>
+    </mat-card-title>
+    <mat-card-subtitle class="card-subtitle">Code: {{toteBag.id}}</mat-card-subtitle>
+    <mat-card-content class="card-content">
+      <span *ngIf="edit"><input id="tote-Bag-name" [(ngModel)]="toteBag.name" placeholder="name"></span>
+    </mat-card-content>
+    <mat-card-actions><img [src]="toteBag.url" width="300" height="300"></mat-card-actions>
+  <button type="button" (click)="goBack()">Back</button>
+</mat-card>
+</div>

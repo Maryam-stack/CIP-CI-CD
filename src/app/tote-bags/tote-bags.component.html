@@ -1,0 +1,15 @@
+<div class="card">
+<h2>Tote Bags</h2>
+<div>
+  <mat-nav-list class="heroes">
+    <mat-list-item *ngFor="let toteBag of toteBags">
+      <mat-card class="list">
+      <mat-button style="cursor: pointer;" routerLink="/details/{{toteBag.id}}">
+        <span class="badge">{{toteBag.id}}</span> {{toteBag.name}}
+      </mat-button>
+    </mat-card>
+    <mat-divider style="max-width: 500px;"></mat-divider>
+    </mat-list-item>
+  </mat-nav-list>
+</div>
+</div>

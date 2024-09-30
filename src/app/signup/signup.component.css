@@ -1,0 +1,32 @@
+.error-message {
+  /* Styles for the error message */
+  color: red;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 5px;
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.buttonStyle {
+  align-items: center;
+  background-color: darkcyan;
+  color: #fff;
+  &[disabled] {
+    background-color: #dcdcdc;
+    color: #bcbcbc;
+    border: #bcbcbc;
+  }
+}

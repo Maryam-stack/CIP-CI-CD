@@ -1,0 +1,40 @@
+/* AppComponent's private CSS styles */
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #d7e2e8;
+  color: #3d3d3d;
+  border-radius: 4px;
+}
+nav a:hover {
+  color: white;
+  background-color: #42545C;
+}
+nav a.active {
+  background-color: black;
+}
+
+.header {
+  background-color: #d7e2e8;
+  display: absolute;
+  flex-direction: row;
+  position: relative;
+  font-size: xx-large;
+  font-weight: bold;
+  padding: 0.7em 0.7em 0.7em;
+}
+
+.menu-list {
+  background-color: #d7e2e8;
+  width: 300px;
+  height: 800px;
+}
+
+.logout {
+  text-align: right;
+  float: right;
+}
+
+

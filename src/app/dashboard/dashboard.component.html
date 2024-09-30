@@ -1,0 +1,35 @@
+<div class="card">
+  <h2>Best Seller</h2>
+  <div class="heroes-menu">
+    <a *ngFor="let toteBag of toteBags"
+    routerLink="/details/{{toteBag.id}}">
+    {{toteBag.name}}
+  </a>
+</div>
+
+<button mat-button (click)="openDialog()">Launch dialog</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h2>Top Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes"
+      routerLink="/detail/{{hero.id}}">
+      {{hero.name}}
+  </a>
+</div>-->
+
+<!--<app-hero-search></app-hero-search>-->

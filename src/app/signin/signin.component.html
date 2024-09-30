@@ -1,0 +1,39 @@
+<div class="auth-wrapper container">
+  <h3 class="h3 mb-3 font-weight-normal text-center">Please sign in</h3>
+  <form class="form-signin form-wrapper" [formGroup]="signinForm" (ngSubmit)="loginUser()">
+    <div class="form-group">
+      <mat-form-field appearance="outline">
+        <mat-label>Email </mat-label>
+        <br>
+        <input
+          matInput
+          type="text"
+          formControlName="email"
+          placeholder="Enter email"
+        />
+        <br>
+        <mat-error class="error-message" *ngIf="signinForm.get('email')?.hasError('required') && signinForm.get('email')?.touched">
+          Email is required
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="form-group">
+      <mat-form-field appearance="outline">
+        <mat-label>Password </mat-label>
+        <br>
+        <input
+          matInput
+          type="text"
+          formControlName="password"
+          placeholder="Password"
+        />
+        <br>
+        <mat-error class="error-message" *ngIf="signinForm.get('password')?.hasError('required') && signinForm.get('password')?.touched">
+          Password is required
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <button  class="buttonStyle" [disabled]="signinForm.invalid" type="submit">Sign in</button>
+    <button class="buttonStyle" (click)="navigateToRegister()" type="button">Sign Up</button>
+  </form>
+</div>
