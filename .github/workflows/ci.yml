@@ -31,5 +31,12 @@ jobs:
       - name: Run tests
         run: npm run test -- --watch=false --no-progress --browsers=ChromeHeadless
 
-      - name: Build the Angular app
-        run: npm run build
+      - name: Build the Angular app into the docs folder
+        run: ng build --output-path=docs --base-href=/
+
+      # Deployment step: Deploy to GitHub Pages from the docs folder
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
