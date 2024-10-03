@@ -40,7 +40,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/CIP-CI-CD/"
             },
             "development": {
               "buildOptimizer": false,
