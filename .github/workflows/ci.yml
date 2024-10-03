@@ -20,8 +20,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          submodules: false      # Skip fetching submodules
-          fetch-depth: 1         # Only fetch the latest commit
+          submodules: false     # Explicitly disable fetching of submodules
+          fetch-depth: 1        # Fetch only the latest commit
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
