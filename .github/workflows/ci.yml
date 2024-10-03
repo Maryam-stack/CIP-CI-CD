@@ -20,7 +20,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          submodules: false  # This prevents submodules from being fetched
+          submodules: false      # Skip fetching submodules
+          fetch-depth: 1         # Only fetch the latest commit
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -34,8 +35,7 @@ jobs:
         run: npm run test -- --watch=false --no-progress --browsers=ChromeHeadless
 
       - name: Build the Angular app into the docs folder
-        run: |
-          npm run build -- --output-path=docs --base-href=/CIP-CI-CD/
+        run: npm run build -- --output-path=docs --base-href=/CIP-CI-CD/
 
       # Deployment step: Deploy to GitHub Pages from the docs folder
       - name: Deploy to GitHub Pages
