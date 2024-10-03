@@ -6,7 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
   selector: 'mock',
   template: `<h1 mat-dialog-title>Delete file</h1>
   <div mat-dialog-content>
-    Would you like to delete cat.jpeg?
+    Would you like to delete item?
   </div>
   <div mat-dialog-actions>
     <button mat-button mat-dialog-close>No</button>

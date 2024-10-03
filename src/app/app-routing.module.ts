@@ -11,13 +11,20 @@ import { UserProfileComponent } from './/user-profile/user-profile.component';
 import { AuthGuard } from "./shared/auth.guard";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/log-in', pathMatch: 'full' },
+  //{ path: '', redirectTo: '/log-in', pathMatch: 'full' },
+  // { path: 'dashboard', component: DashboardComponent},
+  // { path: 'details/:id', component: ToteBagDetailComponent, canActivate: [AuthGuard] },
+  // { path: 'toteBags', component: ToteBagsComponent, canActivate: [AuthGuard] },
+  // { path: 'log-in', component: SigninComponent },
+  // { path: 'sign-up', component: SignupComponent },
+  // { path: 'user-profile/:id', component: UserProfileComponent, canActivate: [AuthGuard] }
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent},
-  { path: 'details/:id', component: ToteBagDetailComponent, canActivate: [AuthGuard] },
-  { path: 'toteBags', component: ToteBagsComponent, canActivate: [AuthGuard] },
+  { path: 'details/:id', component: ToteBagDetailComponent },
+  { path: 'toteBags', component: ToteBagsComponent },
   { path: 'log-in', component: SigninComponent },
   { path: 'sign-up', component: SignupComponent },
-  { path: 'user-profile/:id', component: UserProfileComponent, canActivate: [AuthGuard] }
+  { path: 'user-profile/:id', component: UserProfileComponent }
 ];
 
 @NgModule({
