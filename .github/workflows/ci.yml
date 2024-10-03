@@ -32,7 +32,7 @@ jobs:
         run: npm run test -- --watch=false --no-progress --browsers=ChromeHeadless
 
       - name: Build the Angular app into the docs folder
-        run: npm run build --output-path=docs --base-href=/CIP-CI-CD/
+        run: npm run build -- --output-path=docs --base-href=/CIP-CI-CD/
 
       - name: Create .nojekyll file
         run: touch docs/.nojekyll
@@ -43,4 +43,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
-          publish_branch: gh-pages  # Ensure you are deploying to gh-pages
