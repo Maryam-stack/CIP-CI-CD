@@ -32,7 +32,7 @@ jobs:
         run: npm run test -- --watch=false --no-progress --browsers=ChromeHeadless
 
       - name: Build the Angular app into the docs folder
-        run: npm run build --output-path=docs --base-href=/
+        run: npm run build --output-path=docs --base-href=/CIP-CI-CD/
 
       - name: Create .nojekyll file
         run: touch docs/.nojekyll
